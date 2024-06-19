@@ -1,0 +1,42 @@
+.Jugadores{
+    color: white;
+    text-align: center;
+    margin-top: 1%;    
+    margin-bottom: 5%;    
+    font: oblique bold 320% cursive;    
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 10%;    
+}
+
+.d-block{
+height: 400px;
+}
+.card-img-top{
+    max-height: 30%;
+}
+.card-text{
+    text-align: justify;
+}
+.card{
+ margin-right: 1%;
+ margin-left: 8%;
+}
+.row{
+    text-align: center;
+    /* display:inline-flex; */
+    margin-left: 10%;
+}
+
+
+/* ENTRADA JUGADORES */
+.Jugador{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.Partidas{
+    color: aquamarine;
+    text-align: center;
+    font: oblique bold 220% cursive;    
+}

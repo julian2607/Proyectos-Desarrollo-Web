@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Contador Automático</h1>
+    <p>El contador está en: <span id="contador"></span></p>
+    
+    <script>
+        function actualizarContador() {
+            fetch('/get_contador')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('contador').textContent = data.contador;
+                });
+        }
+
+        setInterval(actualizarContador, 1000);  // Actualizar cada segundo
+    </script>
+</body>
+</html>
